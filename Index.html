@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Список пользователей</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="users-page">
+
+        <header class="users-page__header">
+
+            <div class="users-page__info">
+                <h1 class="users-page__title">
+                    Список пользователей
+                </h1>
+
+                <p class="users-page__description">
+                    Загрузка пользователей из внешнего API
+                </p>
+            </div>
+
+            <button class="users-page__load-button" type="button">
+                Загрузить пользователей
+            </button>
+
+        </header>
+
+
+        <section class="users-table">
+
+            <div class="users-table__header">
+
+                <h2 class="users-table__title">
+                    Пользователи
+                </h2>
+
+                <span class="users-table__count">
+                    0 пользователей
+                </span>
+
+            </div>
+
+
+            <div class="users-table__wrapper">
+
+                <table class="users-table__table">
+
+                    <thead class="users-table__head">
+                        <tr class="users-table__row">
+                            <th class="users-table__cell">ID</th>
+                            <th class="users-table__cell">Имя</th>
+                            <th class="users-table__cell">Username</th>
+                            <th class="users-table__cell">Email</th>
+                            <th class="users-table__cell">Телефон</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="users-table__body">
+                        <!-- Здесь JavaScript создаст строки -->
+                    </tbody>
+
+                </table>
+
+
+                <div class="users-table__empty">
+                    Пользователи ещё не загружены
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
